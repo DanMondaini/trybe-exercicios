@@ -32,10 +32,10 @@
   </head>
   <body>
     <header> 
-      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+      <h1 class="title" id="title">Exercício 5.1 - JavaEscripito </h1>
     </header>    
     <main class="main-content" id="mc">
-      <section class="center-content">
+      <section class="center-content" id="cc">
         <p>Texto padrão do nosso site</p>
         <p id="descricao">-----</p>
         <p>Trybe</p>
@@ -57,6 +57,9 @@
 
         document.getElementById("descricao").innerHTML = "Trabalhando em uma grande empresa.";
         document.getElementById('mc').style.backgroundColor = 'rgb(' + 76 + ',' + 164 + ',' + 109 + ')';
+        document.getElementById("cc").style.backgroundColor = 'white';
+        document.getElementById("title").innerHTML = "Exercício 5.1 - JavaScript";
+        document.getElementById("descricao").toUpperCase();
         
     </script>
   </body>
